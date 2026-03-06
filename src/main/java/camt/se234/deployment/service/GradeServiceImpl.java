@@ -20,3 +20,5 @@ public class GradeServiceImpl implements GradeService {
             return "F";
     }
 }
+
+//This method returns grade based on score
