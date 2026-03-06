@@ -1,7 +1,10 @@
 services:
-  backend:
+  frontend:
     image: gingerbluework/234-deploylab-backend:latest
     pull_policy: always
     ports:
       - "8087:8080"
+    environment:
+      - VITE_GRAPHQL_URI=http://54.234.30.254:8087/graphql
+      - VITE_SERVER_URI=http://54.234.30.254:8087
     restart: unless-stopped
